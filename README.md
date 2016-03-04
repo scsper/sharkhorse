@@ -95,7 +95,7 @@ Tagged template string generator. Any generator passed as a template string valu
 generator into `create` function
 
 ```js
-let MyStr = generators.templateString`test${generators.sequence()}`;
+let MyStr = generators.templateString(`test${generators.sequence()}`);
 create(MyStr); // test1
 create(MyStr); // test2
 create(MyStr); // test3
